@@ -1,0 +1,18 @@
+pip install pandas==1.4.1 jupyterlab==3.3.2 scikit-learn==1.0.2 mlflow==1.24.0 boto3==1.21.22
+jupyter lab --ip 0.0.0.0 --port 8990
+
+uvicorn main:app --host 0.0.0.0  --port 8002 --reload
+
+
+# MLFLOW
+http://localhost:5000/#/
+
+# MinIO
+http://localhost:9001/login
+
+# Gitea
+http://localhost:3000/
+
+
+# Mysql
+docker exec -it mlflow_db mysql -u train -D mlops -p
